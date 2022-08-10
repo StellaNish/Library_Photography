@@ -1,7 +1,7 @@
 /*-----HEADER-------*/
 
 #header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main1.jpg);
+    background-image: url(images/main1.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;    
