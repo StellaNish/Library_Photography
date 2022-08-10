@@ -1,0 +1,105 @@
+/* Title */
+.body-text {
+    background-color: black;
+    color:white;
+    font-size: 3vw;
+    padding: 3%;
+}
+
+/*--Trips Section--*/
+.trips-section {
+    margin: 5% 0;
+    /*-- background-color: rgba(163, 139, 101, 0.7); RgbaColor: rgba(113,150,166,1.00)--*/
+    background-color: RGBA(78,101,94,0.4);
+    backdrop-filter: blur(5px);
+  }
+  
+  .trips-section h1 {
+    text-align: center;
+    color: #f1e9db;
+    padding: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size:3rem;
+  }
+  
+  .trips-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25%;
+  }
+  
+  .trip-tile {
+    position: relative;
+    margin: 2%;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    border: 2px solid #f1e9db;
+    border-radius: 3%;
+  }
+  
+  .perth-trip-tile {
+    background-image: url(images/portfolio.jpg);
+    background-size: cover;
+    background-position: auto;
+    margin: auto;
+  }
+  
+  .trip-tile-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 6% auto;
+    bottom: 0;
+  }
+  
+  .trip-tile-text a {
+    padding: 0.5vw 1.5vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    font-size: 1vw;
+    color: black;
+    text-decoration:none;
+    border-radius: 5px;
+    border: 2px solid #f1e9db;
+    background-color:red;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .trip-tile-text h2 {
+    margin: 40% auto 0 0;
+    font-size: 2vw;
+    padding: 7%;
+    color: #f1e9db;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .trip-tile-text a:hover {
+    background-color: orangered;
+    color: black;
+  }
+  
+  p {
+    color: black !important;
+    margin: 0 0 20px;
+    line-height: 1.6;
+  }
+
+  /* Adding Random selection button*/
+#random_location_button {
+  padding: 11px 30px;
+  text-align: center;
+  -webkit-box-pack: center;
+  display: inline-block;
+  font-size: 16px;
+  color: blue;
+}
+
+#random_location_button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #e64c10;
+  color: white;
+  border: 1px solid #e64c10;
+}

@@ -1,0 +1,40 @@
+.text-center {
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+p{
+text-align: center;
+font-weight: bolder;
+}
+
+label {
+    color: white;
+    font-weight: bolder;
+}
+
+ body {
+    background-image: url("images/background.jpg") !important;  /* Website background */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } 
+
+  h3, .h3 {
+    font-size: 1.9375rem;
+    color: white;
+}
+
+h2, .h2 {
+    text-align: center;
+    color: black;
+}
+
+h4, .h4 {
+    font-size: 1.5625rem;
+    text-align: center;
+}

@@ -1,0 +1,281 @@
+/*-----HEADER-------*/
+
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    height: 100vh;
+    width: auto;
+    top: 0;
+    text-align: center;
+}
+
+#header .navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+#header .nav-item{
+    padding: 0 10px;        
+}
+
+#header .nav-link{
+    float: right;
+    font-weight: 500;
+    color: white;
+}
+
+#header h1 {
+    color: white;
+    font-size: 3rem;
+    padding-top: 18%;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+#header h6{
+    color: whitesmoke;
+}
+
+#header marquee{
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: 500;
+    padding-top: 15%;
+}
+
+/* ----------------ABOUT--------------------- */ 
+
+#about {
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h3{
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+#about .row {
+    padding: 1% ;     
+}
+
+#about p{
+    text-align: justify;
+    padding: 5px;
+}
+
+#about .row img{
+    width: 100px;
+    height: 100px;    
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* ----------------BLOG--------------------- */ 
+
+#blog{
+    text-align: center;
+    padding: 15px; 
+    position: relative;   
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/wave.jpg);
+}
+
+#blog h3{
+    padding: 45px ;    
+}
+
+#blog .container {
+    position: relative;
+    width: 100%;
+    padding: 25px 0;
+  }
+  
+#blog  .image {
+    width: auto;
+    height: 350px;
+  }
+  
+#blog .overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;    
+    background-color: transparent;
+    opacity: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+#blog .container:hover .overlay {
+    transform: scale(1);
+    cursor: pointer;    
+  }
+  
+.text {
+    color: yellow;  
+    font-weight: 700;
+    border-bottom: 2px solid yellow;
+    padding: 3px;
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* ----------------REVIEWS--------------------- */ 
+
+#reviews {
+    
+    text-align: center;  
+    background-color: #DBF0FE; 
+    padding: 55px 0; 
+   
+}
+
+#reviews h3{
+    margin: 40px  auto 120px !important;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#reviews .main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+#reviews .service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transition: transform 1s;
+
+}
+
+#reviews .service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 10px solid #0578f3;
+}
+
+#reviews .service-logo img{
+    width: 85px;
+    height: 85px;
+    margin-top: 12px;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+
+#reviews .service h4{
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+}
+
+#reviews .service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #007bff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+#reviews .service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #007bff, #fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+#reviews .service p{
+    text-align: justify;
+}
+
+#reviews .shadowOne {
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: 0;
+    
+    transition: transform 0.8s;
+}
+
+#reviews .shadowTwo {
+    height: 200px;
+    width: 64%;
+    background:white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: auto;
+}
+
+.main:hover .service{
+    transform: translateY(-50px);
+}
+
+.main:hover .shadowOne{
+    transform: translateY(-25px);
+}
+
+.main:hover img{
+    transform: rotate(360deg);
+}
