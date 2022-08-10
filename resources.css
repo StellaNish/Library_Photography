@@ -108,7 +108,7 @@
     text-align: center;
     padding: 15px; 
     position: relative;   
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/wave.jpg);
+    background-image: url(images/wave.jpg);
 }
 
 #blog h3{
