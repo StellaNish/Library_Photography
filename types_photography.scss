@@ -92,8 +92,8 @@
   -webkit-box-pack: center;
   display: inline-block;
   font-size: 16px;
-  color: white;
-  background-color: blue;
+  color: white !important;
+  background-color: blue !important;
 }
 
 #random_location_button:hover {
